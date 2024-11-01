@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Ler dois valores numéricos e apresentar a diferença do maior para o menor. Utilize métodos de
+    Entrada e/ou Saída.-->
+<script>
+    function fnOrdenar(){
+        var n1;
+        var n2;
+ 
+        var numero1;
+        var numero2;
+        n1 = parseInt(prompt("Digite o primero numero: "));
+        n2 = parseInt(prompt("Digite o segundo numero: "));
+        if (n1 > n2) {
+            numero1 = n1 - n2;
+        } else if (n2 > n1){
+            numero2 = n2 - n1;
+        }
+ 
+        alert("A diferença entre os dois Numeros é de: " + numero1 + "\n" 
+        );
+    }
+</script>
+</head>
+<body onload="fnOrdenar()"; >
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--Elaborar um programa que efetue a leitura de um número inteiro e apresentar uma mensagem
+informando se o número é par ou ímpar. Utilize métodos de Entrada e/ou Saída.-->
+
+    <script>
+        function verificarParOuImpar() {
+            var numero = parseInt(prompt("Digite um número inteiro:"));
+
+            if (numero % 2 === 0) {
+                alert("O número " + numero + " é par.");
+            } else {
+                alert("O número " + numero + " é ímpar.");
+            }
+        }
+    </script>
+</head>
+<body onload="verificarParOuImpar();">
+</body>
+</html>

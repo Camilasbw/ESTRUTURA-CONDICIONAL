@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Ler quatros valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o aluno não foiaprovado, indicar um mensagem informando esta condição. Apresentar junto das mensagens o valor damédia do aluno para qualquer condição. Utilize métodos de Entrada e/ou Saída..-->
+<script>
+    function fnOrdenar(){
+        var n1;
+        var n2;
+        var n3;
+        var n4;
+ 
+ 
+        var nota1;
+        var nota2;
+        var nota3;
+        var nota4;
+        n1 = parseFloat(prompt("Digite a primeira nota: "));
+        n2 = parseFloat(prompt("Digite a segunda nota: "));
+        n3 = parseFloat(prompt("Digite a terceira nota: "));
+        n4 = parseFloat(prompt("Digite a quarta nota: "));
+        const conta = (n1 + n2 + n3 + n4) / 4;
+        if (conta < 7) {
+            alert("Aluno reprovado\n Média: " + conta );
+        } else if (conta >= 7){
+            alert("Aluno aprovado\n Média: "+ conta );
+        }
+ 
+    }
+</script>
+</head>
+<body onload="fnOrdenar()"; >
+</body>
+</html>
